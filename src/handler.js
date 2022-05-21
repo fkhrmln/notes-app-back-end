@@ -107,7 +107,7 @@ const editNotesByIdHandler = (req, h) => {
         status: 'success',
         message: 'Catatan berhasil di edit',
       })
-      .code(201);
+      .code(200);
 
     return res;
   }

@@ -130,10 +130,12 @@ const deleteNotesById = (req, h) => {
   if (index !== -1) {
     notes.splice(index, 1);
 
-    const res = h.response({
-      status: 'success',
-      message: 'Catatan berhasil di hapus',
-    });
+    const res = h
+      .response({
+        status: 'success',
+        message: 'Catatan berhasil di hapus',
+      })
+      .code(200);
 
     return res;
   }
